@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+body
+{
+    font-family: 'Rubik', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: #353637;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #32a0c2 4px solid;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #branding{
+    float: left;
+}
+header #branding h1{
+    margin: 0;
+}
+header nav{
+    float: right;
+}
+header .highlight, header .current a{
+    color: #32a0c2;
+    font-weight: bold;
+}
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 15px;
+    background-origin: padding-box;
+    background: gray;
+}
+#showCase {
+    min-height: 400px;
+    background: url("../img/image.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+#showCase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+#showCase p{
+    font-size: 20px;
+}
+#newsLetter{
+    padding: 15px;
+    color: white;
+    background: #353637;
+}
+#newsLetter h1{
+    float: left;
+}
+#newsLetter form{
+    float: right;
+    margin-top: 15px;
+}
+#newsLetter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+.button{
+    height: 38px;
+    background: #cccccc;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #353637;
+}
+.button:hover{
+    color: white;
+    background: #353637;
+    font-weight: bolder;
+}
+#boxes{
+    margin-top: 20px;
+}
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    background: #32a0c2;
+    color: white;
+    text-align: center;
+}
+@media(max-width: 768px){
+    header #branding, header nav, header nav li,
+    #newsLetter h1, #newsLetter form, #boxes .box{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #showCase h1{
+        margin-top: 40px;
+    }
+    #newsLetter .button{
+        display: block;
+        width: 100%;
+    }
+    #newsLetter form input[type="email"]{
+        margin-top: 5px;
+        width: 100%;
+    }
+}
